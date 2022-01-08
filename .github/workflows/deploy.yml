@@ -10,9 +10,9 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: apps.pwms.com.br
-        FTP_USERNAME: app1
+        FTP_USERNAME: apps1
         FTP_PASSWORD: K5^@P&%6Osu3kFB0oycx
-        LOCAL_DIR: /images
+        LOCAL_DIR: .
         REMOTE_DIR: /srv/apps.pwms.com.br/www/marmotas
         METHOD: sftp
         PORT: 22
