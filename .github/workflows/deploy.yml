@@ -1,4 +1,4 @@
-name: deploy em producao(html simples)
+name: deploy em producao(html simples.)
 
 on:
   push:
