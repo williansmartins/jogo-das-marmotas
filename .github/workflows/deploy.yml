@@ -1,10 +1,5 @@
-name: deploy em producao(html simples.)
-
-on:
-  push:
-    branches:
-      - 'master'
-
+on: push
+name: 🚀 deploy automatizado (html simples)
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -14,11 +9,11 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
-          FTP_SERVER: ${{ secrets.ftp_host }}
-          FTP_USERNAME: ${{ secrets.ftp_user }}
-          FTP_PASSWORD: ${{ secrets.ftp_password }}
-          LOCAL_DIR: ./
-          REMOTE_DIR: /srv/apps.pwms.com.br/www/${{ secrets.app_folder }}
-          METHOD: sftp
-          PORT: 22
-          ARGS: --verbose
+        FTP_SERVER: ${{ secrets.ftp_host }}
+        FTP_USERNAME: ${{ secrets.ftp_user }}
+        FTP_PASSWORD: ${{ secrets.ftp_password }}
+        LOCAL_DIR: www/
+        REMOTE_DIR: /srv/apps.pwms.com.br/www/${{ secrets.app_folder }}
+        METHOD: sftp
+        PORT: 22
+        ARGS: --verbose          
