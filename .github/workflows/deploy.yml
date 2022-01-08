@@ -12,7 +12,7 @@ jobs:
         FTP_SERVER: ${{ secrets.ftp_host }}
         FTP_USERNAME: ${{ secrets.ftp_user }}
         FTP_PASSWORD: ${{ secrets.ftp_password }}
-        LOCAL_DIR: www/
+        LOCAL_DIR: ./
         REMOTE_DIR: /srv/apps.pwms.com.br/www/${{ secrets.app_folder }}
         METHOD: sftp
         PORT: 22
