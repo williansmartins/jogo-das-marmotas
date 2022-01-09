@@ -9,7 +9,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
-        FTP_SERVER: apps.pwms.com.br
+        FTP_SERVER: ${secrets.FTP_APPS_HOST}
         FTP_USERNAME: apps1
         FTP_PASSWORD: K5^@P&%6Osu3kFB0oycx
         LOCAL_DIR: .
