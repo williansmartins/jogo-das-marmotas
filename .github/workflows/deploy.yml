@@ -13,7 +13,7 @@ jobs:
         FTP_USERNAME: apps1
         FTP_PASSWORD: K5^@P&%6Osu3kFB0oycx
         LOCAL_DIR: .
-        REMOTE_DIR: /srv/apps.pwms.com.br/www/${{APP_FOLDER}}
+        REMOTE_DIR: /srv/apps.pwms.com.br/www/${{secrets.APP_FOLDER}}
         METHOD: sftp
         PORT: 22
         ARGS: --verbose          
