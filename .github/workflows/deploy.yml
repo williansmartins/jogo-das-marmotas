@@ -11,10 +11,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ${{secrets.FTP_HOST}}
-        FTP_USERNAME: apps1
-        FTP_PASSWORD: K5^@P&%6Osu3kFB0oycx
+        FTP_USERNAME: ${{secrets.FTP_USER}}
+        FTP_PASSWORD: ${{secrets.FTP_PASSWORD}}
         LOCAL_DIR: .
-        REMOTE_DIR: /srv/apps.pwms.com.br/www/${{secrets.APP_FOLDER}}
+        REMOTE_DIR: /srv/${{secrets.FTP_HOST}}/www/${{secrets.APP_FOLDER}}
         METHOD: sftp
         PORT: 22
         ARGS: --verbose          
