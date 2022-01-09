@@ -13,7 +13,7 @@ jobs:
         FTP_USERNAME: apps1
         FTP_PASSWORD: K5^@P&%6Osu3kFB0oycx
         LOCAL_DIR: .
-        REMOTE_DIR: /srv/apps.pwms.com.br/www/marmotas
+        REMOTE_DIR: /srv/apps.pwms.com.br/www/jogo-da-marmotas
         METHOD: sftp
         PORT: 22
         ARGS: --verbose          
